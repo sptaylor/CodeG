@@ -1,0 +1,18 @@
+<html>
+<form action="/solve">
+  <label>
+
+    <div>Country</div>
+    <select name="country">
+      {% for country in countries %}
+          <option value="{{ country }}">{{ country }}</option>
+      {% endfor %}
+
+    </select>
+  </label>
+    <input type="submit" value="Submit">
+
+</form>
+</html>
+
+
